@@ -1,0 +1,17 @@
+meta {
+  name: putUpdatePost
+  type: http
+  seq: 8
+}
+
+patch {
+  url: {{HOST_URL}}/posts/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "La viuda Negra"
+  }
+}

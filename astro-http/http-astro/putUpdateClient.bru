@@ -1,0 +1,17 @@
+meta {
+  name: putUpdateClient
+  type: http
+  seq: 7
+}
+
+patch {
+  url: {{HOST_URL}}/clients/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Manolito"
+  }
+}

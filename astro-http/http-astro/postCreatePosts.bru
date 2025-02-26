@@ -1,0 +1,20 @@
+meta {
+  name: postCreatePosts
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{HOST_URL}}/posts
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "53243453453534",
+    "title": "Hola Mundo",
+    "likes": 120
+    
+  }
+}
